@@ -15,11 +15,11 @@
 
   function signin(){
  
-    var Email=document.getElementById("Email");
-    var password=document.getElementById("password");
+    var Email=document.getElementById("Email").value;
+    var password=document.getElementById("password").value;
 
     const promise =auth.createUserWithEmailandPassword(Email.value,password.value);
-    promise.catch(=> alert(e.message));
+    promise.catch(e => alert(e.message));
     alert("Signed in");
 
 

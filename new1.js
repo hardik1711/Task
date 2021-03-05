@@ -1,5 +1,5 @@
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
+// Your web app's Firebase configuration
+var firebaseConfig = {
     apiKey: "AIzaSyADUNLPOxnW1rGlO0KFVqeMt31kRAeyQCM",
     authDomain: "form-71a11.firebaseapp.com",
     projectId: "form-71a11",
@@ -18,19 +18,11 @@
     var Email=document.getElementById("Email").value;
     var password=document.getElementById("password").value;
 
-    /*const promise =auth.createUserWithEmailandPassword(Email.value,password.value);
+    const promise =auth.createUserWithEmailandPassword(Email.value,password.value);
     promise.catch(e => alert(e.message));
-    alert("Signed in");*/
-    firebase.auth().signInWithEmailAndPassword(Email,password).catch(function(error){
-         var errorcode =error.code;
-    var errormessage =error.message;
-
-    window.alert("error" + errormessage)
-
-     
-    });
-
-    alert("signed in");
+    alert("Signed in");
+    
+    //alert("signed in");
 
 
 
